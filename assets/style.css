@@ -1,23 +1,32 @@
-body {
-	margin: 0;
-	background: #000;
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: no-repeat;
+    background-size: cover;
+	
 }
 
-video{
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -100;
-	transform: translateX(-50%) translateY(-50%);
-	background: url("https://www.videvo.net/videvo_files/converted/2015_08/videos/PowerLines.mp439839.mp4") no-repeat;
-	background-size: cover;
-	transition: 1s opacity;
- }
 
- .stopfade {
-	 opacity: .5;
- }
+@media screen and (max-device-width: 800px) {
+    html {
+         background: #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+video#bgvid {
+    transition: 1s opacity;
+}
+.stopfade { opacity: .5; } 
