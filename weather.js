@@ -1,3 +1,7 @@
+$(document).ready(function(){
+
+
+
 function vidFade() {
     vid.classList.add("stopfade");
 }
@@ -17,3 +21,8 @@ pauseButton.addEventListener("click", function () {
         pauseButton.innerHTML = "Paused";
     }
 })
+
+console.log("testin123")
+
+
+});
