@@ -30,3 +30,48 @@ video#bgvid {
     transition: 1s opacity;
 }
 .stopfade { opacity: .5; } 
+
+h1{
+    Color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+}
+
+
+
+.button {
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    
+  }
+  
+ 
+.jumbotron{
+    height: 600px;
+    width: 520px;
+    right: 33%;
+    margin: 200px;
+    position: absolute;
+    text-align: center;
+    background: transparent;
+    border: 3px solid white; 
+   
+}
+
+h2, h3{
+    color: white;
+ }
+
+ .container2{
+     height: 600px;
+     width: 520px;
+     left: 89%;
+     margin: 90px;
+     position: absolute;
+     text-align: center;
+     background: transparent;
+     border: 3px solid white;
+     
+ }
+
+ 
