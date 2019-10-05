@@ -2,54 +2,39 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
- 
- <link href="https://fonts.googleapis.com/css?family=Lobster+Two:700i&display=swap" rel="stylesheet">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-
-
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SongCast</title>
+  
+  <!--Bootstrap Link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
   <!--Link to jQuery Library-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <!-- Link to Moment.js-->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
- 
-
-  <!--Bootstrap Link-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+  
+  <!--Google Maps Link-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+  <!--External Style Sheet-->
+  <link rel="stylesheet" href="./assets/style.css">
+  
+  
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
 
-  <!--google Maps-->
+  <!--External Javascript-->
+  <script src="./assets/javascript/skycons.js"></script>
+  <script src="./assets/javascript/weather.js"></script>
+  
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
+  
 </head>
 
 <body>
@@ -81,99 +66,41 @@
       <input class="form-control" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-light" type="submit">Search</button>
     </form>
-
   </nav>
 
 
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container1">
-      <h2 class="display-4">Weather</h2>
-      <h2>
-        <div id="temp"></div>
-        <div id="minutely"></div>
-      </h2>
-      <h3>
-        <div id="location"></div>
-      </h3>
+  <div class="row mt-5">
+    <div class="col-md-1 mx-auto"></div>
+    <div id="weather-div" class="col-md-4 mx-auto">
+        <h2 class="display-4">Current Weather</h2>
+        <h2>
+          <div id="temp"></div>
+          <div id="icon-div">
+            <canvas id="" width="64" height="64"></canvas>
+            
+    
+          </div>
+        </h2>
+        <h3>
+          <div id="location"></div>
+        </h3>
+       
     </div>
+
+    <div id="music-div" class="col-md-4 mx-auto">
+      <h2 class="display-4">Now Playing...</h2>
+      
+      <iframe src="https://open.spotify.com/embed/track/7ixuc4KOSHm0BsrwsRLM3i" width="275" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="col-md-1 mx-auto"></div>
   </div>
+
+  
 
  
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container2">
-      <h2 class="display-4">Music</h2>
-    </div>
-  </div>
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://maps.googleapis.com/maps/api/js?callback=createMap&key=AIzaSyDdSkrPQdH4qhHGQa6D6ot89Zo6ddnSaU0"
-  async defer></script>
-
-<!-- Firebase Core JavaScript Link -->
-<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-<!-- Specific Firebase products we want (Database) -->
-<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-
-
-<!-- Link to Moment.js-->
-<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-
-<script src="assets/weather.js"></script>
-
-
-  <!--External Style Sheet-->
-  <link rel="stylesheet" href="assets/style.css">
+  
 
 </body>
 

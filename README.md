@@ -44,3 +44,7 @@ Helpful Links
 Agile Methodology
 
 Git Branching
+
+<footer>
+<p>made by <a href="https://codepen.io/juliepark"> julie</a> ♡
+</footer>

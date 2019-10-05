@@ -1,4 +1,52 @@
+
 video#bgvid {
+    transition: 1s opacity;
+}
+.stopfade { opacity: .5; } 
+
+h1 {
+    Color: white;
+    font-family: 'Permanent Marker', cursive, Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+nav {
+    background: #1c1c1b;
+    border-bottom-style: double; 
+    border-color: #ccc9c4;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+
+  }
+  
+#weather-div {
+    border-style: double; 
+    border-width: 3px;
+    border-color: black; 
+    background: #262523;
+    min-height: 300px;
+    
+}
+
+#music-div {
+    border-style: double; 
+    border-width: 3px;
+    border-color: black; 
+    background: #262523;
+    min-height: 300px;
+}
+
+h2, h3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Hind', sans-serif;
+}
+
+
+ video#bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -17,6 +65,8 @@ video#bgvid {
 }
 
 
+
+
 @media screen and (max-device-width: 800px) {
     html {
          background: #000 no-repeat center center fixed;
@@ -25,53 +75,3 @@ video#bgvid {
         display: none;
     }
 }
-
-video#bgvid {
-    transition: 1s opacity;
-}
-.stopfade { opacity: .5; } 
-
-h1{
-    Color: white;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 60px;
-}
-
-
-
-.button {
-    -webkit-transition-duration: 0.4s; 
-    transition-duration: 0.4s;
-    
-  }
-  
- 
-.jumbotron{
-    height: 600px;
-    width: 520px;
-    right: 33%;
-    margin: 200px;
-    position: absolute;
-    text-align: center;
-    background: transparent;
-    border: 3px solid white; 
-   
-}
-
-h2, h3{
-    color: white;
- }
-
- .container2{
-     height: 600px;
-     width: 520px;
-     left: 89%;
-     margin: 90px;
-     position: absolute;
-     text-align: center;
-     background: transparent;
-     border: 3px solid white;
-     
- }
-
- 
