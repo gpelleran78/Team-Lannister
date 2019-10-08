@@ -1,3 +1,19 @@
+body{
+	color: whitesmoke;
+}
+
+.active {
+	color: whitesmoke;
+}
+
+#temp {
+	padding-right: 0;
+	margin-left: 20px;
+}
+
+#iconBox{
+	margin-left: 10%;
+}
 
 video#bgvid {
     transition: 1s opacity;
