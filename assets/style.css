@@ -1,6 +1,9 @@
 body{
-	color: whitesmoke;
+    color: whitesmoke;
+    font-family: 'Amatic SC', cursive;
 }
+
+
 
 .active {
 	color: whitesmoke;
@@ -11,8 +14,10 @@ body{
 	margin-left: 20px;
 }
 
-#iconBox{
-	margin-left: 10%;
+#icon {
+   height: 100px; 
+   width: 180px;
+   float: left;
 }
 
 video#bgvid {
@@ -23,7 +28,7 @@ video#bgvid {
 h1 {
     Color: white;
     font-family: 'Permanent Marker', cursive, Arial, Helvetica, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 nav {
@@ -47,6 +52,28 @@ nav {
     
 }
 
+#about-div {
+    border-style: double; 
+    border-width: 3px;
+    border-color: black; 
+    background: #262523;
+    min-height: 300px;
+    align-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#favorite-div {
+    border-style: double; 
+    border-width: 3px;
+    border-color: black; 
+    background: #262523;
+    min-height: 300px;
+    align-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
 #music-div {
     border-style: double; 
     border-width: 3px;
@@ -55,10 +82,22 @@ nav {
     min-height: 300px;
 }
 
-h2, h3{
+#toggleScale {
+    float: right;
+}
+
+h2 {
     color: white;
-    font-size: 20px;
-    font-family: 'Hind', sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    color: white;
+    font-size: 40px;
+}
+
+.title{
+    font-size: 50px;
 }
 
 
