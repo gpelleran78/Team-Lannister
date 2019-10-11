@@ -52,49 +52,30 @@
     
         <ul class="nav justify-content-left">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="favorites.html">Favorites</a>
+              <a class="nav-link active" href="favorites.html">Favorites</a>
             </li>
-        <form id="vb_yt_search-form" action="http://www.youtube.com/results" method="get" target="_blank" class="form-inline">
-          <input id="vb_yt_search-term" name="search_query" class="form-control" type="text" placeholder="Search Youtube" aria-label="Search">
-          <button class="btn btn-outline-light" value="Search" type="submit">Search</button>
-        </form>
+            <form id="vb_yt_search-form" action="http://www.youtube.com/results" method="get" target="_blank" class="form-inline">
+                <input id="vb_yt_search-term" name="search_query" class="form-control" type="text" placeholder="Search Youtube" aria-label="Search">
+                <button class="btn btn-outline-light" value="Search" type="submit">Search</button>
+              </form>
       </nav>
     
 
-
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div id="weather-div" class="col-md-3 mt-4 mr-3">
-                <h2 class="title">Current Weather</h2>
-                <div id='location'>
-                        <div id='address'></div>
-                        <canvas id='icon'></canvas>
-                        
-                        
-                          <div id='temp'></div>
-                          <a href='#'>
-                            <span id='far'> ºF </span>
-                          </a>
-                          <span> | </span>
-                          <a href='#'>
-                            <span id='cel'> ºC </span>
-                          </a>
-                       
-                      </div>
-                      
-            </div>
-            <div id="music-div" class="col-md-6 mt-4 ml-3">
-             <h2 class="title">Now Playing</h2>
-            <div id="player"></div>
-            <div id="playlist"></div>
             
+            <div class="container">
+                    <div class="row">
+                        <div id="favorite-div" class="col-md-10">
+                            <h3>Favorite Tracks</h3>
+                            
+                        </div>
+                    </div>
+                 </div>
       
             
             </div>
