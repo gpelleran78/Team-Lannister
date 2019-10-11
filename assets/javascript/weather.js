@@ -102,7 +102,7 @@ $(document).ready(function () {
                     "sleet": "deep focus",
                     "snow": "cozy",
                     "wind": "classical",
-                    "fog": "autumn indie pop folk"
+                    "fog": "autumn indie pop folk" 
                   };
               
           var q = searchQuery[iconRequest];
