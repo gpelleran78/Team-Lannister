@@ -106,7 +106,7 @@ $(document).ready(function () {
                   };
               
           var q = searchQuery[iconRequest];
-          var APIkey = "AIzaSyCuNPBqRoDPqyMP-Jbp66ukLAK0EPPO1js";
+          var APIkey = "AIzaSyCOKZkK-TGph6pVZcbtte5vWGtxLYUxE2U";
             $.ajax({
                 url: `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${q}&type=playlist&key=${APIkey}`,
                 method: "GET"
@@ -123,7 +123,7 @@ $(document).ready(function () {
         function musicGenerator() {
           var videoArray = [];
           $.ajax({
-            url: `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=AIzaSyCuNPBqRoDPqyMP-Jbp66ukLAK0EPPO1js`,
+            url: `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=AIzaSyCOKZkK-TGph6pVZcbtte5vWGtxLYUxE2U`,
             method: "GET"
           }).then(function(response){
             console.log(playlistId)
