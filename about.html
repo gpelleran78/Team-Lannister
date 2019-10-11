@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SongCast</title>
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Link to jQuery Library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Link to Vue.js Library-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Link to Moment.js-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!--Google Maps Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
+
+    <!--External Style Sheet-->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    
+</head>
+<body>
+        <video playsinline autoplay muted loop id="bgvid">
+                <source src="https://www.videvo.net/videvo_files/converted/2015_08/videos/PowerLines.mp439839.mp4" type="video/mp4">
+              </video>
+
+    <!--navbar-->
+  <nav class="navbar justify-content-between">
+        <a class="navbar-brand">
+          <h1>Song Cast</h1>
+        </a>
+    
+        <ul class="nav justify-content-left">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="favorites.html">Favorites</a>
+            </li>
+            <form id="vb_yt_search-form" action="http://www.youtube.com/results" method="get" target="_blank" class="form-inline">
+                <input id="vb_yt_search-term" name="search_query" class="form-control" type="text" placeholder="Search Youtube" aria-label="Search">
+                <button class="btn btn-outline-light" value="Search" type="submit">Search</button>
+              </form>
+      </nav>
+    
+    <div class="container">
+       <div class="row">
+           <div id="about-div" class="col-md-10">
+               <h1>SongCast</h1>
+                <p class="text-center text-light pt-3"> <p>Created by: 
+                    <br>
+                    Geremy Pelleran, Miyoung Chung, Christina Sosa & Chris Goddard</p>Copyright &copy;</p> 
+                    <img src="./githublogo.png"> <a href="https://www.github.com/gpelleran78/Team-Lannister" alt="Github">  See the code on GitHub</a>
+           </div>
+       </div>
+    </div>
+
+    <div id="footer" class="container-fluid border-white border-top fixed-bottom text-light">
+            <a class="position-absolute fixed-bottom justify-content-center" href="https://darksky.net/poweredby/" alt="Powered By Darksky" title="Powered by darksky">
+                Powered By Darksky
+               <img src="https://darksky.net/images/darkskylogo.png" width="14px">
+             </a>
+          </div>
+          
+</body>
+</html>
